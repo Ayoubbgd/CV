@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bagdad</title>
+</head>
+<body>
+    <h1>RESUME FORM</h1>
+    <form action="somthing.php" method="post" enctype="multipart/form-data">
+
+        <label for="name"><strong>Full name:</strong></label>
+        <input id="name" type="text" placeholder="Entre your full name" minlength="4" maxlength="30" required><br><br>
+
+
+        <label for="Email"><strong>Email:</strong></label>
+        <input id="Email" type="email" placeholder="youremail@gmail.com" required><br><br>
+
+        <label for="City"><strong>City:</strong></label>
+        <input id="City" type="text" placeholder="city of resedancy" required><br><br>
+
+        <label for="Phone"><strong>Phone Number:</strong></label>
+        <input id="Phone" type="tel" placeholder="00 00 00 00 00" maxlength="10" pattern="[0]{1}[5-7]{1}[0-9]{8}" required><br><br>
+
+        <label for="Birth"><strong>Date of birth:</strong></label>
+        <input id="Birth" type="date" required><br><br>
+
+        <label for="You"><strong>Talk about your self here:</strong></label><br>
+        <textarea name="You" id="Comment" rows="6" cols="0" placeholder="introduction, objectif ..ext" required></textarea><br>
+
+        <p>
+            <strong>Your languages:</strong><br>
+            <input id="Ar" type="checkbox" value="Arabic">
+            <label for="Ar">Arabic</label><br>
+            <input id="Native Ar" type="radio" value="Native Ar" name="Level Ar">
+            <label for="Native Ar">Native</label>
+            <input id="Advanced Ar" type="radio" value="Advanced Ar" name="Level Ar">
+            <label for="Advanced Ar">Advanced</label>
+            <input id="Beginner Ar" type="radio" value="Beginner Ar" name="Level Ar">
+            <label for="Beginner Ar">Beginner</label><br>
+
+            <input id="En" type="checkbox" value="English">
+            <label for="En">English</label><br>
+            <input id="Native En" type="radio" value="Native En" name="Level En">
+            <label for="Native En">Native</label>
+            <input id="Advanced En" type="radio" value="Advanced En" name="Level En">
+            <label for="Advanced En">Advanced</label>
+            <input id="Beginner En" type="radio" value="Beginner En" name="Level En">
+            <label for="Beginner En">Beginner</label><br>
+
+            <input id="Fr" type="checkbox" value="French">
+            <label for="Fr">French</label><br>
+            <input id="Native Fr" type="radio" value="Native Fr" name="Level Fr">
+            <label for="Native Fr">Native</label>
+            <input id="Advanced Fr" type="radio" value="Advanced Fr" name="Level Fr">
+            <label for="Advanced Fr">Advanced</label>
+            <input id="Beginner Fr" type="radio" value="Beginner Fr" name="Level Fr">
+            <label for="Beginner Fr">Beginner</label><br>
+        </p>    
+
+        <label for="School"><strong>School:</strong></label>
+        <select name="School" id="School" required>
+            <option value="ESGEN">ESGEN</option>
+            <option value="ENSSEA">ENSSEA</option>
+            <option value="EHEC">EHEC</option>
+            <option value="ESC">ESC</option>
+            <option value="ENSM">ENSM</option>
+        </select><br><br>
+
+        <label for="Picture"><strong>Your picture:</strong></label><br>
+        <input type="file" id="Picture" accept="image/png, image/jpeg" required><br><br>
+
+        <input type="submit">
+        <input type="reset"><br>
+    </form>
+</body>
+</html>
